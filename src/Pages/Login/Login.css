@@ -1,0 +1,177 @@
+/* General styles */
+@font-face {
+  font-family: "Monse";
+  src: url("./../../assets/Fonts/Montserrat-Light.ttf") format("truetype");
+  font-weight: normal;
+}
+
+.login-container {
+  font-family: 'Monse';
+  background: #e6e8e3;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 80px;
+}
+
+.login-content {
+  display: flex;
+  background: #a4c6d7;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 40px;
+  width: 100%;
+  max-width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-image {
+  max-width: 40%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.login-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.login-form h2 {
+  font-size: 2.5rem;
+  color: #0d0404;
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+}
+
+.error-message {
+  color: red;
+  font-size: 1rem;
+  margin-bottom: -10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Contenedor para correo y dominio */
+.email-domain-container {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.email-domain-container .form-group {
+  flex: 1;
+}
+
+.email-domain-container input {
+  width: 100%;
+}
+
+/* Campo de contraseña */
+.password-container {
+  width: 100%;
+}
+
+/* Botón de inicio de sesión */
+.login-button {
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  background-color: #113459;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s;
+  width: 100%;
+}
+
+.login-button:hover {
+  background-color: #0088cc;
+  transform: scale(1.05); /* Reduce the scale to make the animation smaller */
+}
+
+/* Botón de regreso al inicio */
+.back-button {
+  background-color: #113459;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #0088cc;
+}
+
+/* Estilo de enlace para registrarse */
+.register-link {
+  margin-top: 15px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.register-link a {
+  color: #113459;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  color: #0088cc;
+}
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+  .login-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .login-image {
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .email-domain-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

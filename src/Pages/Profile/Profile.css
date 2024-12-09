@@ -1,0 +1,98 @@
+/* src/Pages/Profile/Profile.css */
+.profile-container {
+    padding: 20px;
+    min-height: auto; /* Cambiado a auto para ajustarse al contenido */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Cambio para alinear hacia arriba */
+  }
+  
+  .profile-details {
+    margin-top: 0; /* Eliminado el margen para pegar más el contenido */
+  }
+  
+  .profile-edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Espaciado reducido */
+  }
+  
+  .profile-edit-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .save-button,
+  .cancel-button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .save-button:hover,
+  .cancel-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .profile-actions {
+    margin-top: 10px; /* Reducido espacio entre el botón de editar y el correo */
+  }
+  
+  .edit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .edit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .profile-bottom-actions {
+    margin-top: 10px; /* Reducido espacio entre editar perfil y regresar al dashboard */
+  }
+  
+  .back-button {
+    background-color: #28a745;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    margin-top: 0; /* Reducido para ponerlo más cerca */
+    text-decoration: none;
+  }
+  
+  .back-button:hover {
+    background-color: #218838;
+  }
+  
+  .profile-footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    position: relative; /* Cambiado de absolute a relative */
+    width: 100%;
+  }
+  
+  
+  .profile-actions {
+    margin-top: 0; /* Eliminado margen superior para unir más los elementos */
+  }
+  
+  .profile-details p {
+    margin-bottom: 5px; /* Eliminado espacio entre los detalles */
+  }
+  
+  .edit-button {
+    margin-top: 0; /* Eliminado espacio superior para pegarlo al correo */
+  }
+  

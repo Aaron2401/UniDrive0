@@ -1,0 +1,131 @@
+/* Fondo con gradiente */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Monse', sans-serif;
+  background-color: #e6e8e3; /* Color uniforme */
+}
+
+/* Contenedor principal */
+.registration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px 80px; /* Mismo padding del login */
+  background-color: #e6e8e3; /* Fondo claro */
+}
+
+/* Contenedor del contenido */
+.registration-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1100px; /* Más amplio para mayor distribución */
+  border-radius: 15px; /* Bordes redondeados */
+  overflow: hidden; /* Garantiza que el contenido no sobresalga */
+  background-color: #a4c6d7; /* Fondo azul claro */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Imagen a la izquierda */
+.image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e6e8e3; /* Fondo claro detrás de la imagen */
+}
+
+.registration-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Imagen adaptada */
+  border-radius: 8px;
+}
+
+/* Formulario de registro */
+.registration-form {
+  flex: 1.5; /* Más espacio para el formulario */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px; /* Separación uniforme entre elementos */
+  padding: 40px; /* Espaciado consistente con el login */
+  background: #ffffff;
+}
+
+/* Encabezado del formulario */
+.form-header {
+  text-align: center;
+  font-size: 2rem;
+  color: #113459; /* Azul oscuro */
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #a4c6d7;
+  margin-bottom: 20px;
+}
+
+/* Grupos de campos */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espaciado interno */
+  width: 100%;
+}
+
+.input-group label {
+  font-weight: bold;
+  color: #333;
+}
+
+.input-group input,
+.input-group select {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Botón de envío */
+.submit-btn {
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  background-color: #113459;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+/* Hover del botón */
+.submit-btn:hover {
+  background-color: #0088cc;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .registration-content {
+    flex-direction: column; /* Apilar imagen y formulario */
+  }
+
+  .image-container,
+  .registration-form {
+    width: 100%;
+    height: auto;
+  }
+
+  .registration-image {
+    height: 200px; /* Tamaño reducido para pantallas pequeñas */
+  }
+}
